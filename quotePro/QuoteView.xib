@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuoteView" customModule="quotePro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRJ-dX-zVy">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl4-eC-0Kb">
+                    <rect key="frame" x="175" y="282" width="250" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="A9e-9J-ngC"/>
+                        <constraint firstAttribute="width" constant="250" id="xxT-ab-LuG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-RB-BT1">
+                    <rect key="frame" x="175" y="373" width="250" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="si8-bD-brs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="gRJ-dX-zVy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="07e-9z-7G9"/>
+                <constraint firstItem="fl4-eC-0Kb" firstAttribute="centerX" secondItem="gRJ-dX-zVy" secondAttribute="centerX" id="2ZO-VG-wWZ"/>
+                <constraint firstItem="g6z-RB-BT1" firstAttribute="centerX" secondItem="gRJ-dX-zVy" secondAttribute="centerX" id="3px-gc-acC"/>
+                <constraint firstItem="g6z-RB-BT1" firstAttribute="top" secondItem="fl4-eC-0Kb" secondAttribute="bottom" constant="63" id="5FE-4K-OBU"/>
+                <constraint firstItem="gRJ-dX-zVy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EKk-X1-BUO"/>
+                <constraint firstAttribute="trailing" secondItem="gRJ-dX-zVy" secondAttribute="trailing" id="ISs-8L-b7J"/>
+                <constraint firstAttribute="bottom" secondItem="gRJ-dX-zVy" secondAttribute="bottom" id="Izl-ad-Q6o"/>
+                <constraint firstItem="fl4-eC-0Kb" firstAttribute="centerY" secondItem="gRJ-dX-zVy" secondAttribute="centerY" id="UO1-5C-qTu"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="gRJ-dX-zVy" id="xTJ-FI-w0U"/>
+                <outlet property="quoteLabel" destination="g6z-RB-BT1" id="WCJ-VU-diU"/>
+                <outlet property="sourceLabel" destination="fl4-eC-0Kb" id="L5y-Ds-agc"/>
+            </connections>
+        </view>
+    </objects>
+</document>
